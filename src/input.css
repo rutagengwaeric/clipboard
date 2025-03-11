@@ -1,17 +1,38 @@
 @import "tailwindcss";
+@tailwind utilities;
 
-@theme {
-    --font-sans: "Bai Jamjuree", "sans-serif";
-    --strongCyan: hsl(171, 66%, 44%);
-    --lightBlue: hsl(233, 100%, 69%);
-    --darkGrayishBlue: hsl(210, 10%, 33%);
-    --grayishBlue: hsl(201, 11%, 66%);
+:root {
+  --font-sans: "Bai Jamjuree", sans-serif; 
+  --strongCyan: hsl(171, 66%, 44%);
+  --lightBlue: hsl(233, 100%, 69%);
+  --darkGrayishBlue: hsl(210, 10%, 33%);
+  --grayishBlue: hsl(201, 11%, 66%);
 }
 
-/* Responsive breakpoints */
-@theme {
-    --sm: 480px;
-    --md: 768px;
-    --lg: 976px;
-    --xl: 1440px;
+/* Define custom utilities */
+@layer utilities {
+  .bg-strongCyan { background-color: var(--strongCyan) }
+  .bg-lightBlue { background-color: var(--lightBlue) }
+  .text-darkGrayishBlue { color: var(--darkGrayishBlue) }
+  .text-grayishBlue { color: var(--grayishBlue) }
 }
+
+/* Responsive breakpoints - modern Tailwind v4 syntax */
+@theme {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+}
+
+body{
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media(max-width:576px){
+  body{
+    background-image: url("./images/bg-header-mobile.png");
+   
+  }}

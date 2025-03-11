@@ -1,19 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
-  <link href="/src/output.css" rel="stylesheet">   
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- Hero Section  -->
-     <section id="hero">
-      <div class="max-w-6xl mx-auto mb-40 text-center pt-16">
-        <img src="./images/logo.svg" alt="" class="mx-auto my-16">
+    <section id="hero">
+      <div class="max-w-6xl mx-auto mb-40 text-center px-10 pt-16">
+        <img src="./images/logo.svg" alt="" class="mx-auto my-16" />
+        <h3 class="mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl">
+          A History of Everything You Copy
+        </h3>
+        <p class="max-w-3xl text-2xl mx-auto text-grayishBlue mb-10">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
+        </p>
+        <div
+          class="flex flex-col justify-center text-xl w-full space-y-6 md:space-y-0 md:space-x-6 md:flex-row text-white"
+        >
+          <a
+            href=""
+            class="p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80 bg-strongCyan"
+            >Download for iOS</a
+          >
+          <a
+            href=""
+            class="p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80 bg-lightBlue"
+            >Download for Windows</a
+          >
+        </div>
       </div>
-     </section>
-</body>
+    </section>
+    <section id="snippets">
+      <div class="max-w-6xl mx-auto text-center px-10">
+        <h3 class="mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl">
+          A History of Everything You Copy
+        </h3>
+        <p class="max-w-3xl text-2xl mx-auto text-grayishBlue mb-10">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center space-y-3 md:flex-row md:space-y-3 md:space-x-10 md:justify-center p-16"
+      >
+        <div class="w-full md:w-1/2 flex items-end">
+          <img
+            src="./images/image-computer.png"
+            class="w-[600px] h-[470px]"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="flex flex-col space-y-3 mb-24 md:w-1/2 items-start md:pl-16">
+          <div class="flex flex-col space-y-1 w-[320px]">
+            <h4 class="text-2xl font-bold text-darkGrayishBlue">
+              Quick Search
+            </h4>
+            <p class="text-grayishBlue">
+              Each search your snippets by content, category, web address,
+              application and more. You
+            </p>
+          </div>
+          <div class="flex flex-col space-y-1 w-[320px]">
+            <h4 class="text-2xl font-bold text-darkGrayishBlue">
+              iCloud Sync
+            </h4>
+            <p class="text-grayishBlue">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+          </div>
+          <div class="flex flex-col space-y-1 w-[320px]">
+            <h4 class="text-2xl font-bold text-darkGrayishBlue">
+              Completely History
+            </h4>
+            <p class="text-grayishBlue">
+              Retrieve any snippets from the first moment you started using
+              the app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
