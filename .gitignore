@@ -1,2 +1,9 @@
-package-lock.json
-/*node_modules
+# Ignore node_modules
+node_modules/
+
+# Ignore package-lock.json (not recommended)
+# package-lock.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db

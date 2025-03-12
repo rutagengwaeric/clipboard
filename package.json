@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "build": "mkdir -p public && tailwindcss -i ./input.css -o ./public/output.css",
-    "dev": "tailwindcss -i ./input.css -o ./output.css --watch"
+    "dev": "tailwindcss -i ./input.css -o ./public/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.12",
